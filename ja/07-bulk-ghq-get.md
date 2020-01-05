@@ -48,7 +48,7 @@ Go Modules時代に移行しつつあり、GOPATH/src以下にソースリポジ
 
 ちなみに、`github-list-starred`は任意のユーザーを指定して、自分以外がスターを付けたリポジトリも一覧できるため、それを`ghq get`に食わても面白いかもしれません。
 
-## Pocketに追加したGitHubポジトリを一括取得する
+## Pocketに追加したGitHubリポジトリを一括取得する
 
 [go-pocket](https://github.com/motemen/go-pocket)を使います。
 
