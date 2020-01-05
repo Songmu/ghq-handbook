@@ -38,4 +38,4 @@ Homebrewでインストール可能です。
 
 その他の環境では、[GitHub Releases](https://github.com/motemen/ghq/releases)から実行ファイルを取得できます。
 
-Goの開発環境がある場合、リポジトリ(https://github.com/motemen/ghq)に対して`go get`したり、cloneして自前ビルドすることも可能ですが、`ghq`の開発者でも無い限り、タグが打たれた安定ビルドの利用をおすすめします。
+Goの開発環境がある場合、開発リポジトリ( https://github.com/motemen/ghq )を`go get`したり、`git clone`して自前ビルドすることも可能ですが、`ghq`の開発者でも無い限り、タグが打たれた安定ビルドの利用をおすすめします。
