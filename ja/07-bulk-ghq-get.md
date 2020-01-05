@@ -39,7 +39,7 @@ Go Modules時代に移行しつつあり、GOPATH/src以下にソースリポジ
 
 ## GitHub上でスターをつけたリポジトリを一括取得する
 
-[github-list-starred](github.com/motemen/github-list-starred)を使います。
+[github-list-starred](https://github.com/motemen/github-list-starred)を使います。
 
 ```console
 % go get github.com/motemen/github-list-starred
