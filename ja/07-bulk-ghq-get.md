@@ -1,4 +1,4 @@
-# リポジトリを一括取得のレシピ集(`STDIN | ghq get`)
+# リポジトリ一括取得のレシピ集(`STDIN | ghq get`)
 
 `ghq get`は標準入力からもtargetリストを受け取れますが、これは一括取得に重宝します。このとき、`--parallel`オプションを利用すると並列で高速に取得をおこなうため便利です。これを利用したtipsを幾つか紹介します。
 
@@ -46,7 +46,7 @@ Go Modules時代に移行しつつあり、GOPATH/src以下にソースリポジ
 % github-list-starred Songmu | ghq get --parallel
 ```
 
-ちなみに、`github-list-starred`は任意のユーザーを指定して、自分以外がスターを付けたリポジトリも一覧できるため、それを`ghq get`に食わせても面白いかもしれません。
+ちなみに、`github-list-starred`は任意のユーザーを指定して、自分以外がスターを付けたリポジトリも一覧できるため、それを`ghq get`に食わても面白いかもしれません。
 
 ## Pocketに追加したGitHubリポジトリを一括取得する
 
