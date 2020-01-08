@@ -46,7 +46,7 @@ Go Modules時代に移行しつつあり、GOPATH/src以下にソースリポジ
 % github-list-starred Songmu | ghq get --parallel
 ```
 
-ちなみに、`github-list-starred`は任意のユーザーを指定して、自分以外がスターを付けたリポジトリも一覧できるため、それを`ghq get`に食わても面白いかもしれません。
+ちなみに、`github-list-starred`は任意のユーザーを指定して、自分以外がスターを付けたリポジトリも一覧できるため、それを`ghq get`に食わせても面白いかもしれません。
 
 ## Pocketに追加したGitHubリポジトリを一括取得する
 
