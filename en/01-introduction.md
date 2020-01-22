@@ -1,41 +1,40 @@
-# イントロダクション
+# Introduction
 
-この文書は、コマンドラインツール`ghq`の使い方を説明するものです。`ghq`のメンテナであるSongmu(Masayuki Matsuki)によって書かれています。
+This document describes how to use `ghq` command. This is written by Songmu(Masayuki Matsuki), a maintainer of `ghq`.
 
-本書のソースコードはMarkdownフォーマットでリポジトリ<https://github.com/Songmu/ghq-handbook>から入手できます。
+Source code of this book is available on <https://github.com/Songmu/ghq-handbook> in Markdown format.
 
-また、本書の電子書籍を<https://leanpub.com/ghq-handbook>から購入できます。
+You can purchase Ebook edition on <https://leanpub.com/ghq-handbook>.
 
-## `ghq`とはなにか
+## What is `ghq`
 
-`ghq`はソースコードリポジトリの取得と管理を簡単にするものです。これは以下のシンプルなアイデアによるものです。
+`ghq` makes cloning and managing source code repositories easy by these simple ideas;
 
-- `ghq get <target>` で何でも簡単にソースコード取得
-    - 柔軟なターゲット指定方式
-    - 複数のVersion Control System(VCS)を透過的に扱う
-- ユニークなディレクトリ構造の強制
-    - `go get`を参考にした`{{GHQ_ROOT}}/{{HOST}}/{{PATH}}`レイアウト
+- `ghq get <target>` to get the source code
+    - can specify targets in flexible way
+    - can deal with various Version Control System(VCS)s transparently
+- ghq forces unique directory hierarchy
+    - `{{GHQ_ROOT}}/{{HOST}}/{{PATH}}` style, inspired by `go get`
 
-これは、GOPATH時代の`go get`でのライブラリ取得ルールをGo以外にも適用したものと言えばGoプログラマには分かりやすいでしょう。`ghq`を使えば、複数プロジェクトの管理が楽になるだけではなく、気になったOSSを気軽にcloneできますし、リポジトリをアドホックなディレクトリにcloneしてしまい見失ってしまうこともなくなります。
+Go programmers will find this is an application of library-getting rule of `go get` in the times of GOPATH. Not only does ghq let you manage many projects easily, it can let you casually clone OSS repos you come across and prevent you from lose sight of repos cloned to ad-hoc directories. 
 
-`ghq`を`peco`や`fzf`等のインタラクティブフィルタツールと組み合わせれば、手元に数百を超えるリポジトリがあっても、瞬時に目的のリポジトリに移動できます。さらに、OSSをカジュアルに手元にcloneできるようになるため、ソースコードリーディングが捗るという嬉しい副作用もあります。実際作者の手元には1000を超えるリポジトリがあります。
+By combination with interactive filtering tools like `peco` or `fzf`, you can move to any desired directory blazing fast even if you have hundreds of repos cloned. Furthermore, `ghq` enables you to clone OSS repos casually, letting you do more code-readings. In fact, the author has more than 1k repos cloned locally.
 
-`ghq`の"gh"はGitHubもしくはgitとhg、qはquickや「急」を意味しています。おそらく。
+"gh" of `ghq` stands for 'GitHub' or 'git & hg' and "q" stands for 'quick' or 「急」 (hurry, sudden, steep or quick, pronounced "queue"). PROBABLY.
 
-## 動作環境
+## Environment
 
-`ghq`はGitHub上のリポジトリ<https://github.com/motemen/ghq>で開発されています。Goで書かれており、複数OSでの動作を確認しています。公式で、Linux, macOS, Windowsの64bitバイナリビルドを提供しています。
+`ghq` is developed on GitHub <https://github.com/motemen/ghq>. It is written in Go and works on multi platform. It officially provides 64 bit binary for Linux, macOS and Windows.
 
-本文書の執筆にあたっては、主に、ghq v1.0.0, macOS 10.15.2, zsh 5.7.1で確認をしていますが、OSやシェル環境による差異は少なくなるように留意しています。
+This content is confirmed with ghq v1.0.0, macOS 10.15.2 and zsh 5.7.1. Differences come from OSes and shells are removed as much as possible.
 
-## `ghq`の導入
+## Install `ghq`
 
-Homebrewでインストール可能です。
+`ghq` is available on Homebrew
 
 ```console
 % brew install ghq
 ```
 
-その他の環境では、[GitHub Releases](https://github.com/motemen/ghq/releases)から実行ファイルを取得できます。
-
-Goの開発環境がある場合、開発リポジトリ( https://github.com/motemen/ghq )を`go get`したり、`git clone`して自前ビルドすることも可能ですが、`ghq`の開発者でも無い限り、タグが打たれた安定ビルドの利用をおすすめします。
+You can download executables for other environments from [GitHub Releases](https://github.com/motemen/ghq/releases).
+We recommend to use tagged stable build version unless you want to develop `ghq`. If you're a Go developer, you can `go get` or `git clone` the developing repository ( https:github.com/motemen/ghq ) and build yourself.
