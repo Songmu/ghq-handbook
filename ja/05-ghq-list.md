@@ -24,7 +24,7 @@ zle -N peco-src
 bindkey '^]' peco-src
 ```
 
-`Ctrl-]` を押せばリポジトリ一覧が表示され、選択したリポジトリに移動します。
+`Ctrl-]`を押せばリポジトリ一覧が表示され、選択したリポジトリに移動します。
 
 一旦、素の`ghq list`でフルパスではない一覧の中からリポジトリを選択し、その結果を、`ghq list --full-path --exact $repo` のように `ghq list`の引数に渡して再度`ghq list`を呼び出してフルパスを得ています。
 
@@ -90,7 +90,7 @@ github.com/golang/go
 github.com/golang/gofrontend
 ```
 
-さらにホストまで含めて`ghq list --full-path --exact github.com/motemen/ghq` などとすれば、フルパスが一意に定まり、出力されるため、他のツールとの連携で重宝します。先のzshの設定内で使われていたテクニックです。
+さらにホストまで含めて`ghq list --full-path --exact github.com/x-motemen/ghq` などとすれば、フルパスが一意に定まり、出力されるため、他のツールとの連携で重宝します。先のzshの設定内で使われていたテクニックです。
 
 ## VCSで絞り込みをおこなう(`--vcs`)
 
