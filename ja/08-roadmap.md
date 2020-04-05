@@ -35,7 +35,7 @@ Goに感謝。もともとのアイデアが`go get`から来ていることや�
 
 前項の謝辞に書かれていたようなことが、裏を返せば貢献に繋がります。GitHubにスターを付けていただくことや、Twitterでツイートしてくださることだけでも大きな貢献です。
 
-GitHubスポンサーや、本書の購入もぜひご検討ください。
+GitHubスポンサーや、本文書の購入もぜひご検討ください。
 
 - https://github.com/sponsors/motemen
 - https://github.com/sponsors/Songmu

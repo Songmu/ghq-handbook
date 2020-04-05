@@ -1,10 +1,10 @@
 # イントロダクション
 
-この文書は、コマンドラインツール`ghq`の使い方を説明するものです。`ghq`のメンテナであるSongmu(Masayuki Matsuki)によって書かれています。
+本文書は、コマンドラインツール`ghq`の使い方を説明するものです。`ghq`のメンテナであるSongmu(Masayuki Matsuki)によって書かれています。
 
-本書のソースコードはMarkdownフォーマットでリポジトリ<https://github.com/Songmu/ghq-handbook>から入手できます。
+本文書のソースコードはMarkdownフォーマットでリポジトリ<https://github.com/Songmu/ghq-handbook>から入手できます。
 
-また、本書の電子書籍を<https://leanpub.com/ghq-handbook>から購入できます。
+また、本文書の電子書籍を<https://leanpub.com/ghq-handbook>から購入できます。
 
 ## `ghq`とはなにか
 
