@@ -30,7 +30,7 @@ targetは`https://{{Host}}/{{Path}}`が基本形です。`https://`は常に省�
 % ghq get svn+ssh://svn.example.com/yourproject
 ```
 
-`ghq get --update`(`-u`) オプションを利用すれば、リポジトリが取得済みの場合に最新の状態への更新をおこないます。
+`ghq get --update`(`-u`) オプションを利用すれば、リポジトリが取得済みの場合でも最新の状態への更新をおこなってくれます。
 
 ## SSHを用いたい場合や、プライベートリポジトリを取得したい場合
 
@@ -71,11 +71,11 @@ path = ~/work/.gitconfig
 
 ## `ghq get {{Project}}`でのowner検出
 
-GitHubのリポジトリパスは`{{Owner}}/{{Project}}`の形式を取りますが、`ghq get {{Project}}`のように、スラッシュを含まないリポジトリ名のみを`ghq get`に与えた場合、`ghq`はownerの補完を試みます。例えば、私(Songmu)の場合、 `ghq get horenso` とすると、`github.com/Songmu/horenso`リポジトリを取得します。
+GitHubのリポジトリパスは`{{Owner}}/{{Project}}`の形式を取りますが、`ghq get {{Project}}`のように、スラッシュを含まないリポジトリ名のみを`ghq get`に与えた場合、`ghq`はownerの補完を試みます。例えば、私(Songmu)の場合、`ghq get horenso`とすると、`github.com/Songmu/horenso`リポジトリを取得します。
 
 この補完は以下の順番でおこなわれます。
 
-1. `ghq.user` が設定されている場合それを使う
+1. `ghq.user`が設定されている場合それを使う
 2. GitHubユーザー名をローカル環境から推定する
 3. ログイン名(`$USER`環境変数。Windowsの場合`$USERNAME`環境変数)
 
