@@ -3,7 +3,7 @@ ghq handbook
 
 このリポジトリは、ソースコードリポジトリの取得・管理を便利にするコマンドラインツール、`ghq`の使い方の説明をするものです。
 
-<https://github.com/motemen/ghq>
+<https://github.com/x-motemen/ghq>
 
 本文書の電子書籍を<https://leanpub.com/ghq-handbook>から購入できます。
 

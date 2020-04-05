@@ -24,7 +24,7 @@
 
 ## 動作環境
 
-`ghq`はGitHub上のリポジトリ<https://github.com/motemen/ghq>で開発されています。Goで書かれており、複数OSでの動作を確認しています。公式で、Linux, macOS, Windowsの64bitバイナリビルドを提供しています。
+`ghq`はGitHub上のリポジトリ<https://github.com/x-motemen/ghq>で開発されています。Goで書かれており、複数OSでの動作を確認しています。公式で、Linux, macOS, Windowsの64bitバイナリビルドを提供しています。
 
 本文書の執筆にあたっては、主に、ghq v1.0.0, macOS 10.15.2, zsh 5.7.1で確認をしていますが、OSやシェル環境による差異は少なくなるように留意しています。
 
@@ -36,6 +36,6 @@ Homebrewでインストール可能です。
 % brew install ghq
 ```
 
-その他の環境では、[GitHub Releases](https://github.com/motemen/ghq/releases)から実行ファイルを取得できます。
+その他の環境では、[GitHub Releases](https://github.com/x-motemen/ghq/releases)から実行ファイルを取得できます。
 
-Goの開発環境がある場合、開発リポジトリ( https://github.com/motemen/ghq )を`go get`したり、`git clone`して自前ビルドすることも可能ですが、`ghq`の開発者でも無い限り、タグが打たれた安定ビルドの利用をおすすめします。
+Goの開発環境がある場合、開発リポジトリ( https://github.com/x-motemen/ghq )を`go get`したり、`git clone`して自前ビルドすることも可能ですが、`ghq`の開発者でも無い限り、タグが打たれた安定ビルドの利用をおすすめします。

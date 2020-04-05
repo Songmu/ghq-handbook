@@ -90,7 +90,7 @@ github.com/golang/go
 github.com/golang/gofrontend
 ```
 
-さらにホストまで含めて`ghq list --full-path --exact github.com/motemen/ghq` などとすれば、フルパスが一意に定まり、出力されるため、他のツールとの連携で重宝します。先のzshの設定内で使われていたテクニックです。
+さらにホストまで含めて`ghq list --full-path --exact github.com/x-motemen/ghq` などとすれば、フルパスが一意に定まり、出力されるため、他のツールとの連携で重宝します。先のzshの設定内で使われていたテクニックです。
 
 ## VCSで絞り込みをおこなう(`--vcs`)
 

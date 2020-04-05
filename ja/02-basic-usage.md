@@ -9,7 +9,7 @@
 `ghq get`を使って`ghq`自体のソースコードを以下のように取得できます。
 
 ```console
-% ghq get motemen/ghq
+% ghq get x-motemen/ghq
 ```
 
 ## ローカルリポジトリを一覧する`ghq list`
@@ -18,14 +18,14 @@
 
 ```console
 % ghq list
-github.com/motemen/ghq
+github.com/x-motemen/ghq
 ```
 
 `--full-path`オプションを付与すれば、フルパスの一覧を得られます。
 
 ```console
 % ghq list --full-path
-/Users/Songmu/ghq/github.com/motemen/ghq
+/Users/Songmu/ghq/github.com/x-motemen/ghq
 ```
 
 上記の例では、`/Users/Songmu/ghq` 配下にソースコードが配置されています。この配置先は`ghq root`コマンドで表示できます。
