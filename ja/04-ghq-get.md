@@ -63,7 +63,7 @@ root = ~/work
 Gitの設定の話になりますが、このとき、`includeIf`設定を併用すると、特定のgitconfigを特定のディレクトリ配下のリポジトリのみに適用することができます。`~/work`以下のリポジトリに対して仕事用のgitconfig(`~/work/.gitconfig`)を適用させる例が以下です。
 
 ```gitconfig
-[includeIf "gitdir:~/work"]
+[includeIf "gitdir:~/work/"]
 path = ~/work/.gitconfig
 ```
 
