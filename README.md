@@ -28,7 +28,8 @@ pull requestも受け付けています。
 ### Appendix
 
 7. [リポジトリ一括取得のレシピ集(`STDIN | ghq get`)](ja/07-bulk-ghq-get.md)
-8. [ghqのこれから](ja/08-roadmap.md)
+8. [エディタ/IDEとの連携Tips](./ja/08-editor-and-ide-integration-tips.md)
+9. [ghqのこれから](ja/09-roadmap.md)
 
 ## 作者
 
