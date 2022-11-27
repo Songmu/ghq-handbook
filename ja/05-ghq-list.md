@@ -35,7 +35,7 @@ ghq-cd () {
     if [ -n "$1" ]; then
         dir="$(ghq list --full-path --exact "$1")"
         if [ -z "$dir" ]; then
-            echo "no directroies found for '$1'"
+            echo "no directories found for '$1'"
             return 1
         fi
         cd "$dir"
