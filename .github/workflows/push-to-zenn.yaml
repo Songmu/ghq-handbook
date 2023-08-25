@@ -12,6 +12,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.GH_PAT }}
       with:
         source-directory: ja
+        destination-github-username: Songmu
         destination-repository-name: zenn.dev
         target-branch: main
         target-directory: books/ghq-handbook
