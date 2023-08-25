@@ -1,0 +1,17 @@
+name: push to zenn
+on:
+  push:
+    branches: [master]
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@3
+    - uses: cpina/github-action-push-to-another-repository@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.GH_PAT }}
+      with:
+        source-directory: ja
+        destination-repository-name: zenn.dev
+        target-branch: main
+        target-directory: books/ghq-handbook
