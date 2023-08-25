@@ -1,3 +1,9 @@
+---
+title: ghqのこれから
+type: tech
+published: true
+---
+
 # ghqのこれから
 
 最後に、ghqの今後について書いて本文書を締めたいと思います。

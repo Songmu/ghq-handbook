@@ -1,3 +1,9 @@
+---
+title: リポジトリ取得ディレクトリの設定(`ghq root`)
+type: tech
+published: true
+---
+
 # リポジトリ取得ディレクトリの設定(`ghq root`)
 
 `ghq`はデフォルトで`$HOME/ghq`配下にリポジトリを配置します。これは変更可能です。

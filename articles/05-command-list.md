@@ -1,3 +1,9 @@
+---
+title: ローカルリポジトリの一覧・パス取得をおこなう(`ghq list`)
+type: tech
+published: true
+---
+
 # ローカルリポジトリの一覧・パス取得をおこなう(`ghq list`)
 
 `ghq list`コマンドはローカルリポジトリの一覧を表示します。`ghq list --full-path`で一覧をフルパスで表示します。
