@@ -1,3 +1,9 @@
+---
+title: リポジトリ一括取得のレシピ集(`STDIN | ghq get`)
+type: tech
+published: true
+---
+
 # リポジトリ一括取得のレシピ集(`STDIN | ghq get`)
 
 `ghq get`は標準入力からもtargetリストを受け取れますが、これは一括取得に重宝します。このとき、`--parallel`(`-P`)オプションを利用すると並列で高速に取得をおこなうため便利です。これを利用したtipsを幾つか紹介します。

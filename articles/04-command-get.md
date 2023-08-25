@@ -1,3 +1,9 @@
+---
+title: リポジトリを取得する(`ghq get`)
+type: tech
+published: true
+---
+
 # リポジトリを取得する(`ghq get`)
 
 `ghq get`は引数か標準入力経由でtargetを受け取り、そのリポジトリを取得します。

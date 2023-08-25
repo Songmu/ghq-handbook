@@ -1,3 +1,9 @@
+---
+title: イントロダクション
+type: tech
+published: true
+---
+
 # イントロダクション
 
 本文書は、コマンドラインツール`ghq`の使い方を説明するものです。`ghq`のメンテナであるSongmu(Masayuki Matsuki)によって書かれています。
