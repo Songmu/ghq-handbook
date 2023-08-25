@@ -1,0 +1,14 @@
+title: "ghq handbook"
+summary: "ソースコードリポジトリの取得・管理を便利にするコマンドラインツール、ghqの使い方を説明します"
+topics: ["ghq"]
+published: true
+price: 500
+chapters:
+- 01-introduction
+- 02-basic-usage
+- 03-command-root
+- 04-command-get
+- 05-command-list
+- 06-command-create
+- 07-bulk-ghq-get
+- 08-ghq-roadmap
