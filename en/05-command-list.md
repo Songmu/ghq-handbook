@@ -11,7 +11,7 @@ The command `ghq list` displays a list of local repositories. `ghq list --full-p
 If you combine this result with an interactive filter tool such as peco or fzf, you can instantly navigate to the desired local repository. Below is the simplest example using peco.
 
 ```console
-% cd  "$( ghq list --full-path | peco )"
+% cd "$(ghq list --full-path | peco)"
 ```
 
 The following is a slightly more advanced example of the zsh settings that I actually use.
@@ -38,16 +38,16 @@ Even without using a filter tool, you can easily move directories by defining a 
 
 ```shell
 ghq-cd () {
-    if [ -n  "$1" ] ;  then
+    if [ -n "$1" ] ;  then
         dir= "$(ghq list --full-path --exact "$1")"
         if [ -z  "$dir" ] ;  then
-            echo  " no directories found for '$1'"
+            echo "no directories found for '$1'"
             return 1
         fi
         cd "$dir"
         return
     fi
-    echo  'usage: ghq-cd $repo'
+    echo 'usage: ghq-cd $repo'
     return 1
 }
 ```
@@ -60,7 +60,7 @@ By default, `ghq list` lists all items in the local repository, but you can also
 % ghq list <query>
 ```
 
-In this example, `ghq` will list repositories that partially match the query string. Also, if the query string starts with a string such as `<hostname>/`, it will search the repositories under that host.
+In this example, `ghq` will list repositories that partially match the query string. Also, if the query string starts with `<hostname>/`, it will search the repositories under that host.
 
 - List repositories containing `motomen`
   - ghq list motemen
