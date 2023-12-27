@@ -1,12 +1,12 @@
 ---
-
 title: Recipe collection for bulk repository acquisition ( STDIN | ghq get)
 type: tech
 published: true
+---
 
-# Recipe collection for bulk repository acquisition (`STDIN | ghq get`)
+# Recipes for bulk repository acquisition (`STDIN | ghq get`)
 
-`ghq get` can also receive the target list from standard input, which is useful for bulk retrieval. It is convenient to use the --parallel(`-P`) option to perform parallel and high-speed acquisition. Here are some tips for using this:
+`ghq get` can also receive the target list from standard input, which is useful for bulk retrieval. It is convenient to use the `--parallel`(`-P`) option to perform parallel and high-speed acquisition. Here are some tips for using this:
 
 ## Bulk update
 
@@ -21,7 +21,8 @@ Update your local management repository to the latest status in bulk.
 If you want to move a repository from one environment to another, you can migrate the repository by saving the output of `ghq list` and using it to `ghq get` in the other environment.
 
 ```console
-% ghq list > repolist.txt \n% cat repolist.txt | ghq get --parallel
+% ghq list > repolist.txt
+% cat repolist.txt | ghq get --parallel
 ```
 
 ## Get submodules separately in bulk
