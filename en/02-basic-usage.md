@@ -58,4 +58,4 @@ The target of `ghq` is not limited to Git and GitHub. Although it is made more c
 - Darcs (darcs)
   We recommend that you use ghq to acquire and manage all public and private, work and hobby codes, Git and other code.
 
-We will provide a detailed explanation of `ghq` in the following chapters. Rather than exhaustively explaining each command, each major use case will be explained. When discussing command line options, the option names are always long options, but some options have short options. See the command line help (`ghq -h`) for more details.
+A detailed explanation of `ghq` is provided in the following chapters. Rather than exhaustively explaining each command, each major use case will be explained. When discussing command line options, the option names are always long options, but some options have short options. See the command line help (`ghq -h`) for more details.
