@@ -4,7 +4,7 @@ type: tech
 published: true
 ---
 
-# Setting the repository acquisition directory ( ghq root)
+# Setting the repository acquisition directory (`ghq root`)
 
 `ghq` places the repository under `$HOME/ghq` by default. This can be changed.
 
@@ -23,7 +23,7 @@ root  =  ~/go/src
 
 This way`ghq get` will retrieve the repository in`~/go/src` and you can list it with `ghq list`.
 
-However, there may be cases where it is difficult to mix Go code and code from other languages. For such cases, multiple ghq.root settings can be made.
+However, there may be cases where it is difficult to mix Go code and code from other languages. For such cases, multiple `ghq.root` settings can be made.
 
 ```gitconfig
 [ ghq ]
@@ -31,7 +31,7 @@ root  =  ~/go/src
 root  =  ~/myprojects
 ```
 
-If multiple directories are set, the last directory written will be the primary one, and `go get` will retrieve the repository in that directory. With this setting,`ghq get` will retrieve the repository under `~/myptojects`, and `ghq list` will list the repositories under both `~/myprojectsghq` and `~/go/src`.
+If multiple directories are set, the last directory written will be the primary one, and `go get` will retrieve the repository in that directory. With this setting,`ghq get` will retrieve the repository under `~/myprojects`, and `ghq list` will list the repositories under both `~/myprojects` and `~/go/src`.
 
 You can check this setting with the `ghq root` command:
 
