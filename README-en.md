@@ -21,10 +21,10 @@ The original book is available in Japanese. This is a volunteer translation into
 
 ### Part 2: How to use
 
-3. [リポジトリ取得ディレクトリの設定(`ghq root`)](en/03-command-root.md)
-4. [リポジトリを取得する(`ghq get`)](en/04-command-get.md)
-5. [ローカルリポジトリの一覧・パス取得をおこなう(`ghq list`)](en/05-command-list.md)
-6. [ローカルリポジトリを作成する(`ghq create`)](en/06-command-create.md)
+3. [Setting the repository acquisition directory (`ghq root`)](en/03-command-root.md)
+4. [Fetching the repository (`ghq get`)](en/04-command-get.md)
+5. [Get the list and path of local repositories (`ghq list`)](en/05-command-list.md)
+6. [Create a local repository (`ghq create`)](en/06-command-create.md)
 
 ### Appendix
 
