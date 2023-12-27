@@ -1,5 +1,5 @@
 ---
-title: Setting the repository acquisition directory (`ghq root`)
+title: Setting the repository acquisition directory (ghq root)
 type: tech
 published: true
 ---
