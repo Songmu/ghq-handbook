@@ -27,9 +27,9 @@ Thank you to the original author, motemen, for bringing such a wonderful tool to
 
 Thanks to Go. The original idea came from `go get`, and `ghq` was written in Go, so without Go, `ghq` wouldn't be what it is today. Thank you very much to everyone on the Go team.
 
-Thank you for the many pull requests. As of January 4, 2020, a whopping 46 people have contributed to the codebase. We would also like to thank those who raised issues.
+Thank you for the many pull requests. As of December 27, 2023, a whopping 70 people have contributed to the codebase. We would also like to thank those who raised issues.
 
-Thank you for the many GitHub stars. As of January 4, 2020, we have received 1,572 stars. I feel fortunate to be able to be involved in this kind of OSS maintenance.
+Thank you for the many GitHub stars. As of December 27, 2023, we have received 2,884 stars. I feel fortunate to be able to be involved in this kind of OSS maintenance.
 
 Thank you for the many introductory articles. We were introduced in various places such as blogs and Twitter, and `ghq` was able to acquire many users.
 
