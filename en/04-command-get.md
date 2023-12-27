@@ -42,12 +42,12 @@ If you use the `ghq get --update` ( -u) option, it will update to the latest sta
 
 `ghq` attempts to retrieve the repository using https by default. However, there may be cases where you want to obtain a private repository using SSH, or you may want to push code using SSH even if it is OSS. The detailed settings of Git won't be covered here, but you have the following options to solve this problem.
 
-- Force _SSH_ use by configuring `url.<base>.insteadOf`
+- Force **SSH** use by configuring `url.<base>.insteadOf`
 - `ghq get` - Use SSH URL as target
 - `ghq get -p` - Switch to SSH acquisition using option
-- Do not use _SSH_ (set _git credentials_ etc. appropriately and perform _pull_ and _push_ using _https_)
+- Do not use **SSH** (set **git credentials** etc. appropriately and perform **pull** and **push** using **https**)
 
-You can choose your preferred method, but rather than using the -p option to fetch with SSH, it is better to configure Git settings and fetch with _HTTPS_, as it gives a sense of uniformity. The author uses _https_ to obtain the source code, and `url.<base>.pushInsteadOf` settings to push via _SSH_.
+You can choose your preferred method, but rather than using the -p option to fetch with SSH, it is better to configure Git settings and fetch with **HTTPS**, as it gives a sense of uniformity. The author uses **https** to obtain the source code, and `url.<base>.pushInsteadOf` settings to push via **SSH**.
 
 ## Switch the acquisition directory for each project (`ghq.<base>.root`)
 
@@ -66,18 +66,18 @@ root  =  ~/work
 root  =  ~/work
 ```
 
-Speaking of Git settings, if you use the `includeIf` setting, you can apply a specific _gitconfig_ only to repositories under a specific directory. The following is an example of applying work _gitconfig_ (`~/work/.gitconfig`) to the repository under `~/work`.
+Speaking of Git settings, if you use the `includeIf` setting, you can apply a specific **gitconfig** only to repositories under a specific directory. The following is an example of applying work **gitconfig** (`~/work/.gitconfig`) to the repository under `~/work`.
 
 ```gitconfig
 [ includeIf "gitdir: ~/work/"]
 path  =  ~/work/.gitconfig
 ```
 
-As a side note, if the `$GHQ_ROOT` environment variable is set, the repository will be acquired under that directory regardless of other `ghq.root` settings. This may also be useful if you want to fetch directories more dynamically.
+As a side note, if the `$GHQ**ROOT` environment variable is set, the repository will be acquired under that directory regardless of other `ghq.root` settings. This may also be useful if you want to fetch directories more dynamically.
 
 ## `ghq get {{Project}}` owner detection
 
-GitHub's repository path takes the form {{Owner}}/{{Project}}, but if you give `ghq get` the repository name without slashes, like `ghq get {{Project}}`, it will attempt to complete the owner. For example, in my case _(Songmu)_, `ghq get horenso retrieves the repository `github.com/Songmu/horenso`.
+GitHub's repository path takes the form {{Owner}}/{{Project}}, but if you give `ghq get` the repository name without slashes, like `ghq get {{Project}}`, it will attempt to complete the owner. For example, in my case **(Songmu)**, `ghq get horenso retrieves the repository `github.com/Songmu/horenso`.
 
 This completion is done in the following order:
 
@@ -87,7 +87,7 @@ This completion is done in the following order:
 
 A function is used to estimate 2, `github.com/Songmu/gitconfig.GitHubUser``, so please refer to it if you want to know more.
 
-By the way, you may want to use the repository name instead of using yourself as the completed owner name. For example, _ruby_ to _github.com/ruby/ruby_, _vim_ to _github.com/vim/vim_, _peco_ to _github.com/peco/peco_, etc.
+By the way, you may want to use the repository name instead of using yourself as the completed owner name. For example, **ruby** to **github.com/ruby/ruby**, **vim** to **github.com/vim/vim**, **peco** to **github.com/peco/peco**, etc.
 
 If you prefer this behavior, you can toggle it by setting the setting `ghq.completeUser` to false.
 
