@@ -6,11 +6,11 @@ published: true
 
 # Introduction
 
-This document describes how to use command line tool `ghq`. This document is written by Songmu (Masayuki Matsuki), the maintainer of `ghq`.
+This document describes how to use command line tool `ghq`. This document is written by Songmu (Masayuki Matsuki), the maintainer of `ghq`. The English translation is by paul-jewell (Paul Jewell).
 
-The source code for this document is available in Markdown format from the repository https://github.com/Songmu/ghq-handbook .
+The source code for this document is available in Markdown format from the repository https://github.com/Songmu/ghq-handbook.
 
-You can also purchase an e-book version of this document at https://leanpub.com/ghq-handbook .
+You can also purchase an e-book version of this document at https://leanpub.com/ghq-handbook.
 
 ## What is `ghq`
 
@@ -30,7 +30,7 @@ In `ghq`, \"gh\" means GitHub (git or hg), and \"q\" means quick or "sudden".
 
 ## Operating environment
 
-ghqis developed in the repository https://github.com/x-motemen/ghq on GitHub . It is written in Go and has been tested on multiple OSs. Officially provides 64-bit binary builds for Linux, macOS, and Windows.
+ghqis developed in the repository https://github.com/x-motemen/ghq on GitHub. It is written in Go and has been tested on multiple OSs. Officially provides 64-bit binary builds for Linux, macOS, and Windows.
 
 When writing this document, we mainly checked using ghq v1.0.0, macOS 10.15.2, and zsh 5.7.1, but we have taken care to minimize differences depending on the OS and shell environment.
 
@@ -40,6 +40,6 @@ It can be installed with Homebrew.
 
 % brew install ghq
 
-For other environments, you can obtain the executable from GitHub Releases .
+For other environments, you can obtain the executable from GitHub Releases.
 
 If you have a Go development environment, you can use `go get` to fetch the development repository (https://github.com/x-motemen/ghq) or `git clone` and build it yourself, but unless you are a developer of `ghq`, we recommend using a stable build.
