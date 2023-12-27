@@ -77,7 +77,7 @@ As a side note, if the `$GHQ**ROOT` environment variable is set, the repository 
 
 ## `ghq get {{Project}}` owner detection
 
-GitHub's repository path takes the form {{Owner}}/{{Project}}, but if you give `ghq get` the repository name without slashes, like `ghq get {{Project}}`, it will attempt to complete the owner. For example, in my case **(Songmu)**, `ghq get horenso retrieves the repository `github.com/Songmu/horenso`.
+GitHub's repository path takes the form {{Owner}}/{{Project}}, but if you give `ghq get` the repository name without slashes, like `ghq get {{Project}}`, it will attempt to complete the owner. For example, in my case **(Songmu)**, `ghq get horenso` retrieves the repository `github.com/Songmu/horenso`.
 
 This completion is done in the following order:
 
