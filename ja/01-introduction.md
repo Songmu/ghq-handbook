@@ -10,7 +10,7 @@ published: true
 
 本文書のソースコードはMarkdownフォーマットでリポジトリ<https://github.com/Songmu/ghq-handbook>から入手できます。
 
-また、本文書の電子書籍を<https://leanpub.com/ghq-handbook>から購入できます。
+また、本文書の電子書籍を<https://leanpub.com/ghq-handbook>から購入できます。<https://zenn.dev/songmu/books/ghq-handbook>でもコンテンツを購入可能です。
 
 ## `ghq`とはなにか
 
@@ -44,4 +44,4 @@ Homebrewでインストール可能です。
 
 その他の環境では、[GitHub Releases](https://github.com/x-motemen/ghq/releases)から実行ファイルを取得できます。
 
-Goの開発環境がある場合、開発リポジトリ( https://github.com/x-motemen/ghq )を`go get`したり、`git clone`して自前ビルドすることも可能ですが、`ghq`の開発者でも無い限り、タグが打たれた安定ビルドの利用をおすすめします。
+Goの開発環境がある場合、開発リポジトリ( https://github.com/x-motemen/ghq )を`go install`したり、`git clone`して自前ビルドすることも可能ですが、`ghq`の開発者でも無い限り、タグが打たれた安定ビルドの利用をおすすめします。

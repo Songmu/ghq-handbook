@@ -2,6 +2,8 @@ name: push to zenn
 on:
   push:
     branches: [master]
+    paths:
+    - 'ja/**'
 jobs:
   push:
     runs-on: ubuntu-latest
