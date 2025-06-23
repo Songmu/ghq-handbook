@@ -6,13 +6,16 @@ jobs:
   push:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: cpina/github-action-push-to-another-repository@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.GH_PAT }}
+    - uses: actions/checkout@v4
+    - id: generate_token
+      uses: actions/create-github-app-token@v1
       with:
+        app-id: ${{ secrets.APP_ID }}
+        private-key: ${{ secrets.APP_PRIVATE_KEY }}
+        repositories: zenn.dev
+    - uses: Songmu/action-push-to-another-repository@v2
+      with:
+        github-token: ${{ steps.generate_token.outputs.token }}
         source-directory: ja
-        destination-github-username: Songmu
-        destination-repository-name: zenn.dev
-        target-branch: main
-        target-directory: books/ghq-handbook
+        destination-repository: Songmu/zenn.dev
+        destination-directory: books/ghq-handbook
