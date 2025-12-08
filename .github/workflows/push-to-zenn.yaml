@@ -4,9 +4,12 @@ on:
     branches: [master]
     paths:
     - 'ja/**'
+permissions:
+  contents: read
 jobs:
   push:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
     - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
       with:
@@ -17,6 +20,7 @@ jobs:
         app-id: ${{ secrets.APP_ID }}
         private-key: ${{ secrets.APP_PRIVATE_KEY }}
         repositories: zenn.dev
+        permission-contents: write
     - uses: Songmu/action-push-to-another-repository@9a7fe32305f083e5e0984e345f30940d0ff87706 # v2.0.11
       with:
         token: ${{ steps.generate_token.outputs.token }}
