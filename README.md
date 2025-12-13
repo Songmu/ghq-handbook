@@ -1,6 +1,8 @@
 ghq handbook
 ============
 
+日本 | [English](README.en.md)
+
 このリポジトリは、ソースコードリポジトリの取得・管理を便利にするコマンドラインツール、`ghq`の使い方の説明をするものです。
 
 <https://github.com/x-motemen/ghq>
@@ -10,8 +12,6 @@ ghq handbook
 <https://zenn.dev/songmu/books/ghq-handbook>でも購入可能です。
 
 pull requestも受け付けています。
-
-現状日本語のみの提供ですが、将来的には英語も提供したいと考えています。売上を使って外部に発注するかもしれません。もちろん、有志の翻訳も歓迎です。
 
 ## 目次
 
@@ -36,6 +36,10 @@ pull requestも受け付けています。
 
 Songmu (Masayuki Matsuki)
 
+## 貢献者
+
+- Jules ([@examosa](https://github.com/examosa)) - 英語翻訳
+
 ## ライセンス
 
-CC BY-NC 3.0
+[CC BY-NC 3.0](LICENSE)
